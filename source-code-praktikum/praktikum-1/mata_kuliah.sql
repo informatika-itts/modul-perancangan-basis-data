@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 25, 2023 at 06:15 PM
+-- Generation Time: Sep 26, 2023 at 12:43 AM
 -- Server version: 10.4.25-MariaDB
 -- PHP Version: 8.1.10
 
@@ -46,6 +46,27 @@ INSERT INTO `mahasiswa` (`NIM`, `nama`, `alamat`, `tanggal_lahir`, `kode_mata_ku
 (104, 'Bob Wilson', 'Jl. Coba 321', '2002-07-05', 3),
 (105, 'Eva Brown', 'Jl. Demo 654', '1998-11-30', 2);
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `mata_kuliah`
+--
+
+CREATE TABLE `mata_kuliah` (
+  `kode_mata_kuliah` int(11) NOT NULL,
+  `nama_mata_kuliah` varchar(255) DEFAULT NULL,
+  `sks` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `mata_kuliah`
+--
+
+INSERT INTO `mata_kuliah` (`kode_mata_kuliah`, `nama_mata_kuliah`, `sks`) VALUES
+(1, 'Matematika Dasar', 3),
+(2, 'Fisika Dasar', 4),
+(3, 'Bahasa Inggris', 2);
+
 --
 -- Indexes for dumped tables
 --
@@ -56,6 +77,12 @@ INSERT INTO `mahasiswa` (`NIM`, `nama`, `alamat`, `tanggal_lahir`, `kode_mata_ku
 ALTER TABLE `mahasiswa`
   ADD PRIMARY KEY (`NIM`),
   ADD KEY `kode_mata_kuliah` (`kode_mata_kuliah`);
+
+--
+-- Indexes for table `mata_kuliah`
+--
+ALTER TABLE `mata_kuliah`
+  ADD PRIMARY KEY (`kode_mata_kuliah`);
 
 --
 -- Constraints for dumped tables
