@@ -391,8 +391,7 @@ Buatlah :
 CREATE TABLE nama_table_yang_diambil_idnya (
     id_tabel INT(11) AUTO_INCREMENT PRIMARY KEY NOT NULL,
     nama_kolom VARCHAR(50),
-    nama_kolom2 ENUM('L','P'),
-    nama_kolom_sebagai_foreign_key INT(11)
+    nama_kolom2 ENUM('L','P')
 );
 
 
