@@ -386,6 +386,21 @@ Buatlah :
 - Database dari soal diatas
 - Kemudian tambahan kolom gambar pada tabel produk.
 
+Urutan Pengerjaan ERD
+1. List entitas yang ada terlebih dahulu
+2. list atribut di setiap entitas
+3. hubungkan setiap entitas sesuai dengan dengan materi yang ada dan tentukan kardinalitasnya.
+
+Urutan Pengerjaan Database
+1. Buat database terlebih dahulu
+2. kemudian buat tabel bernama pembeli
+3. buat tabel bernama produk
+4. buat tabel pembelian, dan hubungkan kolom foreign key ke kolom primary key di tabel yang dituju
+5. buat tabel penilaian dan hubungkan kolom foreign key ke kolom primary key di tabel yang dituju
+
+Skema
+![Screenshot 2023-10-01 200341.png](Modul%202%20Entity%20Relational%20Diagram%20dan%20Relational%20D%200da83263c616492990d6b23f59dd2891/skema.png)
+
 ### Hint Query
 ```sql
 CREATE TABLE nama_table_yang_diambil_idnya (
