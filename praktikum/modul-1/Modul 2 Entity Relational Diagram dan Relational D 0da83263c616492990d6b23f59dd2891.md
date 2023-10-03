@@ -253,69 +253,41 @@ Di SQL, jika ingin menuliskan **select** atau **SELECT** ataupun **Select**
 - **Tipe Data numerik.**
     
     
-    | Data Type | Keterangan |
-    | --- | --- |
-    | TINYINT | Bilangan bulat terkecil, dengan jangkauan untuk bilangan
-    bertanda: -128 sampai dengan 127 dan untuk yang tidak
-    bertanda : 0 s/d 255. |
-    | SMALLINT | Bilangan bulat dengan jangkauan untuk bilangan bertanda :
-    -32768 s/d 32767 dan untuk yang tidak bertanda : 0 s/d 65535 |
-    | MEDIUMINT | Bilangan bulat dengan jangkauan untuk bilangan bertanda :
-    -8388608 s/ d 8388607 dan untuk yang tidak bertanda : 0 s/d
-    16777215 |
-    | INT | Bilangan bulat dengan jangkauan untuk bilangan bertanda :
-    -2147483648 s/d 2147483647 dan untuk yang tidak bertanda : 0 s/d
-    4294967295 |
-    | BIGINT | Bilangan bulat terbesar dengan jangkauan untuk bilangan
-    bertanda : -9223372036854775808 s/d 9223372036854775807
-    dan untuk yang tidak bertanda : 0 s/d 1844674473709551615 |
-    | FLOAT, REAL,
-    DOUBLE | Bilangan pecahan |
-    | DECIMAL,
-    NUMERIC | Bilangan pecahan, misalnya DECIMAL(5,2
-    dapat digunakan untuk menyimpan bilangan
-    -99,99 s/d 99,99 |
+| Data Type | Keterangan |
+| --- | --- |
+| TINYINT | Bilangan bulat terkecil, dengan jangkauan untuk bilangan bertanda: -128 sampai dengan 127 dan untuk yang tidak bertanda : 0 s/d 255. |
+| SMALLINT | Bilangan bulat dengan jangkauan untuk bilangan bertanda : -32768 s/d 32767 dan untuk yang tidak bertanda : 0 s/d 65535 |
+| MEDIUMINT | Bilangan bulat dengan jangkauan untuk bilangan bertanda : -8388608 s/ d 8388607 dan untuk yang tidak bertanda : 0 s/d 16777215 |
+| INT | Bilangan bulat dengan jangkauan untuk bilangan bertanda : -2147483648 s/d 2147483647 dan untuk yang tidak bertanda : 0 s/d 4294967295 |
+| BIGINT | Bilangan bulat terbesar dengan jangkauan untuk bilangan bertanda : -9223372036854775808 s/d 9223372036854775807 dan untuk yang tidak bertanda : 0 s/d 1844674473709551615 |
+| FLOAT, REAL, DOUBLE | Bilangan pecahan |
+| DECIMAL, NUMERIC | Bilangan pecahan, misalnya DECIMAL(5,2) dapat digunakan untuk menyimpan bilangan -99,99 s/d 99,99 |
 - **Tipe Data String.**
     
     
-    | Data Type | Keterangan |
-    | --- | --- |
-    | CHAR | Mampu menangani data hingga 255 karakter. |
-    | VARCHAR | Mampu menangani data hingga 255 karakter.
-    Tipe data VARCHAR tidak mengharuskan
-    untuk memasukkan data sepanjang yang telah
-    ditentukan. |
-    | TINYBLOB,
-    TINYTEXT | Mampu menangani hingga 255 byte |
-    | BLOB, TEXT | Mampu menangani hingga 65.535 byte (64 KB) |
-    | MEDIUMBLOB,
-    MEDIUMTEXT | Ukuran 16777215 byte. Mampu menyimpan data hingga 18 MB.  |
-    | LONGBLOB,
-    LONGTEXT | Ukuran 4294967295 byte. Mampu menyimpan data
-    hingga berukuran GIGA BYTE. Tipe data ini
-    memiliki batas penyimpanan hingga 4 GB. |
-    | ENUM(‘nilai1’,’nil
-    ai2’,...,’nilaiN’) | Ukuran 1 atau 2 byte. Tergantung jumlah nilai
-    enumerasinya (maksimum 65535 nilai) |
-    | SET(‘nilai1’,’nilai2
-    ’,...,’nilaiN’) | 1,2,3,4 atau 8 byte, tergantung jumlah anggota
-    himpunan (maksimum 64 anggota) |
-- ********Tipe Data Date.********
+| Data Type | Keterangan |
+| --- | --- |
+| CHAR | Mampu menangani data hingga 255 karakter. |
+| VARCHAR | Mampu menangani data hingga 255 karakter. Tipe data VARCHAR tidak mengharuskan untuk memasukkan data sepanjang yang telah ditentukan. |
+| TINYBLOB, TINYTEXT | Mampu menangani hingga 255 byte |
+| BLOB, TEXT | Mampu menangani hingga 65.535 byte (64 KB) |
+| MEDIUMBLOB, MEDIUMTEXT | Ukuran 16777215 byte. Mampu menyimpan data hingga 18 MB.  |
+| LONGBLOB, LONGTEXT | Ukuran 4294967295 byte. Mampu menyimpan data hingga berukuran GIGA BYTE. Tipe data ini memiliki batas penyimpanan hingga 4 GB. |
+| ENUM(‘nilai1’,’nilai2’,...,’nilaiN’) | Ukuran 1 atau 2 byte. Tergantung jumlah nilai enumerasinya (maksimum 65535 nilai) |
+| SET(‘nilai1’,’nilai2’,...,’nilaiN’) | 1,2,3,4 atau 8 byte, tergantung jumlah anggota himpunan (maksimum 64 anggota) |
+
+- **Tipe Data Date.**
     
     
-    | Type Data | Keterangan |
-    | --- | --- |
-    | DATETIME | Kombinasi tanggal dan jam, dengan jangkauan dari
-    ‘1000-01-01 00:00:00’s/d ‘9999-12-31 23:59:59’ |
-    | DATE | Tanggal dengan jangkauan dari ‘1000-01-01’s/d ‘9999-12-31’ |
-    | TIMESTAMP | Kombinasi tanggal dan jam, dengan jangkauan dari
-    ‘1970-01-01 00:00:01’s/d ‘2038-01-19 03:14:07 |
-    | TIME | Waktu dengan jangkauan dari ‘-838:59:59’s/d ‘838:59:59’ |
-    | YEAR | Data tahun antara 1901 s/d 2155 |
+| Type Data | Keterangan |
+| --- | --- |
+| DATETIME | Kombinasi tanggal dan jam, dengan jangkauan dari ‘1000-01-01 00:00:00’s/d ‘9999-12-31 23:59:59’ |
+| DATE | Tanggal dengan jangkauan dari ‘1000-01-01’s/d ‘9999-12-31’ |
+| TIMESTAMP | Kombinasi tanggal dan jam, dengan jangkauan dari ‘1970-01-01 00:00:01’s/d ‘2038-01-19 03:14:07 |
+| TIME | Waktu dengan jangkauan dari ‘-838:59:59’s/d ‘838:59:59’ |
+| YEAR | Data tahun antara 1901 s/d 2155 |
 
 # DDL (*Data Definition language*)
-
----
 
 ## 1. *Constraint*
 
