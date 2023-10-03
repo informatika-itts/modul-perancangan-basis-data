@@ -385,3 +385,22 @@ Buatlah :
 - ERD dari soal diatas
 - Database dari soal diatas
 - Kemudian tambahan kolom gambar pada tabel produk.
+
+### Hint Query
+```sql
+CREATE TABLE nama_table_yang_diambil_idnya (
+    id_tabel INT(11) AUTO_INCREMENT PRIMARY KEY NOT NULL,
+    nama_kolom VARCHAR(50),
+    nama_kolom2 ENUM('L','P'),
+    nama_kolom_sebagai_foreign_key INT(11)
+);
+
+
+CREATE TABLE nama_table (
+    id_tabel INT(11) AUTO_INCREMENT PRIMARY KEY NOT NULL,
+    nama_kolom VARCHAR(50),
+    nama_kolom2 ENUM('L','P'),
+    nama_kolom_sebagai_foreign_key INT(11),
+    FOREIGN KEY (nama_kolom_sebagai_foreign_key) REFERENCES nama_table_yang_diambil_idnya(id_tabel)
+)
+```
