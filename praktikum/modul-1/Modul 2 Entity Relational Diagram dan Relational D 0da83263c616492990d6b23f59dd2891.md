@@ -362,6 +362,53 @@ Format Syntax untuk Menghapus Kolom tertentu :
 Format Syntax untuk Edit Kolom tertentu :
     
 ![Untitled](Modul%202%20Entity%20Relational%20Diagram%20dan%20Relational%20D%200da83263c616492990d6b23f59dd2891/Untitled%2017.png)
+
+**D. Menghapus Foreign Key**
+
+Format syntax untuk menghapus foreign key :
+
+```Sql
+ALTER TABLE nama_tabel DROP CONSTRAINT nama-tabel_ibfk_index;
+```
+Keterangan :
+- nama-tabel_ibfk_index adalah nama constrain yang dibuat otomatis oleh mariadb/mysql ketika merelasikan foreignkey
+- index adalah nomor urutan dari seluruh foreign key yang ada pada tabel itu
+
+Untuk mengetahui nama constrain dari kolom yang akan di hapus foreign key-nya dapat menggunakan syntax berikut:
+
+```sql
+SELECT TABLE_NAME, CONSTRAINT_TYPE, CONSTRAINT_NAME
+FROM information_schema.table_constraints
+WHERE table_name='nama_tabel_dari_constraint_mu';
+```
+
+Contoh Penggunaan :
+
+![](Modul%202%20Entity%20Relational%20Diagram%20dan%20Relational%20D%200da83263c616492990d6b23f59dd2891/drop_constraint.png)
+
+diatas terdapat 2 foreign key pada tabel pembelian yaitu pembeli_id dan produk_id. Untuk menghapus foreign key produk_id langkah pertama adalah menghapus constrain dari column itu
+
+```sql
+SELECT TABLE_NAME, CONSTRAINT_TYPE, CONSTRAINT_NAME
+FROM information_schema.table_constraints
+WHERE table_name='pembelian';
+```
+hasil :
+![](Modul%202%20Entity%20Relational%20Diagram%20dan%20Relational%20D%200da83263c616492990d6b23f59dd2891/nama_constraint.png)
+
+karena kita tahu bahwa produk_id ada pada urutan ke 2 pada tabel penilaian maka dapat dikatakan bahwa nama constraint dari foreign key produk_id adalah `pembelian_ibfk_2`
+
+selanjutnya kita drop constraintnya
+```sql
+alter table pembelian drop constraint pembelian_ibfk_2;
+```
+
+kamu bisa lihat bahawa garis yang menghubungkan relasi sudah hilang namun dalam structur tabel masih terdapat simbol kunci berwarna abu-abu.
+
+simbol kunci tersebut bukan menandakan bahwa itu adalah foreign key, namun itu menandakan bahwa column itu terdapat index.
+
+pastinya kamu sudah tahu kegunaan dari index bukan :)
+
     
 ## 4. DROP
 Format Syntax untuk menghapus Tabel :
