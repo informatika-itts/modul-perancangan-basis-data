@@ -307,9 +307,9 @@ Di SQL, jika ingin menuliskan **select** atau **SELECT** ataupun **Select**
     
 ![Untitled](Modul%202%20Entity%20Relational%20Diagram%20dan%20Relational%20D%200da83263c616492990d6b23f59dd2891/Untitled%2010.png)
     
-- buka kolom SQL
+- buka console pada bagian bawah halaman phpmyadmin
 
-![1.png](Modul%202%20Entity%20Relational%20Diagram%20dan%20Relational%20D%200da83263c616492990d6b23f59dd2891/1.png)
+![1.png](Modul%202%20Entity%20Relational%20Diagram%20dan%20Relational%20D%200da83263c616492990d6b23f59dd2891/console.png)
 
 ## 2. CREATE
 
@@ -321,9 +321,9 @@ format syntax untuk membuat database :
 
 Membuat Database “praktikum1”
 
-![3.png](Modul%202%20Entity%20Relational%20Diagram%20dan%20Relational%20D%200da83263c616492990d6b23f59dd2891/3.png)
+![3.png](Modul%202%20Entity%20Relational%20Diagram%20dan%20Relational%20D%200da83263c616492990d6b23f59dd2891/console_kueri.png)
 
-ketik syntax diatas lalu tekan “Kirim” / “Go”
+ketik syntax diatas lalu tekan `ctrl + enter`
 
 2. **CREATE TABLE**
 
