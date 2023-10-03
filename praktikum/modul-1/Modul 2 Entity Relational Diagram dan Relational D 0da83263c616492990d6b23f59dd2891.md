@@ -379,7 +379,7 @@ Untuk mengetahui nama constrain dari kolom yang akan di hapus foreign key-nya da
 ```sql
 SELECT TABLE_NAME, CONSTRAINT_TYPE, CONSTRAINT_NAME
 FROM information_schema.table_constraints
-WHERE table_name='nama_tabel_dari_constraint_mu';
+WHERE table_name='nama_tabel_dari_foreign-key_mu';
 ```
 
 Contoh Penggunaan :
