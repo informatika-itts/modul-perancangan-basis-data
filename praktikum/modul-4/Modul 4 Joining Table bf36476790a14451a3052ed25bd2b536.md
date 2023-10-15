@@ -16,7 +16,7 @@
 
 - silahkan unduh data database pada link berikut :
 
-	(link data database modul 4)[https://github.com/informatika-itts/modul-perancangan-basis-data/blob/main/source-code-praktikum/praktikum-4/modul4.sql]
+  https://github.com/informatika-itts/modul-perancangan-basis-data/blob/main/source-code-praktikum/praktikum-4/modul4.sql
 
 - Setalah download silahkan buat database bernama `modul 4`.
 - kemudian import data database yang telah di download ke dalam database `modul4`
