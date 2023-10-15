@@ -14,7 +14,12 @@
 
 # Setup
 
-silahkan unduh database pada link berikut :
+- silahkan unduh data database pada link berikut :
+
+  https://github.com/informatika-itts/modul-perancangan-basis-data/blob/main/source-code-praktikum/praktikum-4/modul4.sql
+
+- Setalah download silahkan buat database bernama `modul 4`.
+- kemudian import data database yang telah di download ke dalam database `modul4`
 
 # Joining Table pada MySQL
 
@@ -43,7 +48,7 @@ SELECT
 	select_list
 FROM
 	t1, t2
-WHERE t1.nama_kolom = t2.nama_kolom
+WHERE t1.nama_kolom = t2.nama_kolom;
 ```
 
 Contoh:
@@ -65,7 +70,7 @@ SELECT
 	pl.tanggal_pembelian,
 	pl.produk_id
 FROM pembeli pb, pembelian pl
-WHERE pb.id_pembeli = pl.pembeli_id
+WHERE pb.id_pembeli = pl.pembeli_id;
 ```
 
 Hasil:
@@ -85,7 +90,7 @@ FROM
 	t1
 INNER JOIN 
 	t2 
-ON t1.nama_kolom = t2.nama_kolom
+ON t1.nama_kolom = t2.nama_kolom;
 ```
 
 Contoh:
@@ -108,7 +113,7 @@ SELECT
 FROM
 	pembelian pl
 INNER JOIN produk pr ON pl.produk_id =  pr.id_produk 
-WHERE pl.id_pembelian BETWEEN 1 AND 100
+WHERE pl.id_pembelian BETWEEN 1 AND 100;
 ```
 
 Hasil:
@@ -129,7 +134,7 @@ SELECT
 FROM
 	B
 INNER JOIN A ON b.nama_kolom = a.nama_kolom
-INNER JOIN C ON a.nama_kolom = c.nama_kolom
+INNER JOIN C ON a.nama_kolom = c.nama_kolom;
 ```
 
 Contoh:
@@ -155,7 +160,7 @@ SELECT
 FROM
 	pembeli pb
 INNER JOIN pembelian pl ON pb.id_pembeli = pl.pembeli_id
-INNER JOIN produk pr ON pr.id_produk = pl.produk_id
+INNER JOIN produk pr ON pr.id_produk = pl.produk_id;
 ```
 
 Hasil:
@@ -187,7 +192,7 @@ FROM
 	t1
 LEFT JOIN
 	t2
-ON t1.nama_kolom = t2.nama_kolom
+ON t1.nama_kolom = t2.nama_kolom;
 
 ```
 
@@ -273,7 +278,7 @@ FROM
 	t1
 RIGHT JOIN
 	t2
-ON t1.nama_kolom = t2.nama_kolom
+ON t1.nama_kolom = t2.nama_kolom;
 
 ```
 
@@ -360,7 +365,7 @@ LEFT JOIN t2 ON t1.id = t2.id
 UNION
 SELECT select_list 
 FROM t1
-RIGHT JOIN t2 ON t1.id = t2.id
+RIGHT JOIN t2 ON t1.id = t2.id;
 
 ```
 
@@ -439,7 +444,7 @@ B.nama_depan AS Pembeli2_NamaDepan,
 B.alamat AS Pembeli2_Alamat
 FROM pembeli AS A
 JOIN pembeli AS B ON A.alamat = B.alamat
-WHERE A.id_pembeli <> B.id_pembeli; -- Menghindari hasil yang duplikat
+WHERE A.id_pembeli < B.id_pembeli; -- Menghindari hasil yang duplikat
 ```
 
 Hasil :
