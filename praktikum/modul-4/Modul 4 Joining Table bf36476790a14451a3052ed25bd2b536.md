@@ -18,7 +18,7 @@
 
   https://github.com/informatika-itts/modul-perancangan-basis-data/blob/main/source-code-praktikum/praktikum-4/modul4.sql
 
-- Setalah download silahkan buat database bernama `modul 4`.
+- Setalah download silahkan buat database bernama `modul4`.
 - kemudian import data database yang telah di download ke dalam database `modul4`
 
 # Joining Table pada MySQL
