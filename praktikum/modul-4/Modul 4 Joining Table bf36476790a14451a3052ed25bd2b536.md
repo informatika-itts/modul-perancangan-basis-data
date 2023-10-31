@@ -18,7 +18,7 @@
 
   https://github.com/informatika-itts/modul-perancangan-basis-data/blob/main/source-code-praktikum/praktikum-4/modul4.sql
 
-- Setalah download silahkan buat database bernama `modul 4`.
+- Setalah download silahkan buat database bernama `modul4`.
 - kemudian import data database yang telah di download ke dalam database `modul4`
 
 # Joining Table pada MySQL
@@ -464,3 +464,16 @@ Hasil :
 | … | … | … | … | … | … |
 
 # Penugasan
+1. Tampilkan seluruh tanggal pembelian produk Laptop Acer Predator Helios tanpa ada tanggal pembelian yang sama.
+
+clue: (inner join)
+
+2. Tampilkan nama depan, id pembelian, nilai produk, dan tanggal pembelian, lalu tampilkan pembelian yang tidak memiliki nilai produk (NULL) .
+
+clue: (inner join, left join)
+
+3. Tampilkan nama depan, judul produk, dan nilai dari produk yang pembelinya laki-laki dan jumlah pembeliannya lebih dari 15 serta urutkan dari yang nilai produknya paling tinggi.
+
+clue: (inner join)
+
+
