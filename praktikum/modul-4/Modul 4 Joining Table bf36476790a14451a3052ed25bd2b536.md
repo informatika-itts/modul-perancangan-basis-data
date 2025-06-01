@@ -216,18 +216,20 @@ tabel `pembelian` :
 
 tabel `penilaian` :
 
-| id_produk | judul_produk | deskripsi_produk | harga_produk | gambar_produk |
-| --- | --- | --- | --- | --- |
-| 1 | Laptop Dell XPS 13 | Laptop Dell XPS 13 dengan layar sentuh... | 1299 | dell_xps_13.jpg |
-| 2 | Smartphone Samsung Galaxy S21 | Smartphone Samsung Galaxy S21 dengan... | 899 | samsung_galaxy_s21.jpg |
-| 3 | TV LED 4K Sony Bravia | TV LED 4K Sony Bravia dengan layar 55... | 799 | sony_bravia_tv.jpg |
-| 4 | Kamera DSLR Nikon D850 | Kamera DSLR Nikon D850 dengan resolu... | 2499 | nikon_d850.jpg |
-| 5 | Smartwatch Apple Watch Series 7 | Smartwatch Apple Watch Series 7 deng... | 399 | apple_watch_series_7.jpg |
-| 6 | Drone DJI Mavic Air 2 | Drone DJI Mavic Air 2 dengan kamera 48... | 799 | dji_mavic_air_2.jpg |
-| 7 | Headphone Bose QuietComfort 45 | Headphone Bose QuietComfort 45 dengan... | 349 | bose_quietcomfort_45.jpg |
-| 8 | Laptop HP Envy x360 | Laptop HP Envy x360 dengan layar sentu... | 999 | hp_envy_x360.jpg |
-| 9 | Tablet iPad Pro 12.9-inch | Tablet iPad Pro 12.9-inch dengan layar... | 1099 | ipad_pro_12_9.jpg |
-| 10 | Kulkas Samsung French Door | Kulkas Samsung French Door dengan kap... | 1999 | samsung_french_door_fridge.jpg |
+| id_penilaian | nilai_produk | pembelian_id |
+|--------------|--------------|--------------|
+| 1            | 3            | 102          |
+| 2            | 1            | 133          |
+| 3            | 1            | 168          |
+| 4            | 4            | 188          |
+| 5            | 4            | 313          |
+| 6            | 1            | 340          |
+| 7            | 2            | 393          |
+| 8            | 5            | 469          |
+| 9            | 2            | 535          |
+| 10           | 3            | 569          |
+| 11           | 4            | 17           |
+
 | … | … | … | … | … |
 
 Query :
@@ -302,18 +304,20 @@ tabel `pembelian` :
 
 tabel `penilaian` :
 
-| id_produk | judul_produk | deskripsi_produk | harga_produk | gambar_produk |
-| --- | --- | --- | --- | --- |
-| 1 | Laptop Dell XPS 13 | Laptop Dell XPS 13 dengan layar sentuh... | 1299 | dell_xps_13.jpg |
-| 2 | Smartphone Samsung Galaxy S21 | Smartphone Samsung Galaxy S21 dengan... | 899 | samsung_galaxy_s21.jpg |
-| 3 | TV LED 4K Sony Bravia | TV LED 4K Sony Bravia dengan layar 55... | 799 | sony_bravia_tv.jpg |
-| 4 | Kamera DSLR Nikon D850 | Kamera DSLR Nikon D850 dengan resolu... | 2499 | nikon_d850.jpg |
-| 5 | Smartwatch Apple Watch Series 7 | Smartwatch Apple Watch Series 7 deng... | 399 | apple_watch_series_7.jpg |
-| 6 | Drone DJI Mavic Air 2 | Drone DJI Mavic Air 2 dengan kamera 48... | 799 | dji_mavic_air_2.jpg |
-| 7 | Headphone Bose QuietComfort 45 | Headphone Bose QuietComfort 45 dengan... | 349 | bose_quietcomfort_45.jpg |
-| 8 | Laptop HP Envy x360 | Laptop HP Envy x360 dengan layar sentu... | 999 | hp_envy_x360.jpg |
-| 9 | Tablet iPad Pro 12.9-inch | Tablet iPad Pro 12.9-inch dengan layar... | 1099 | ipad_pro_12_9.jpg |
-| 10 | Kulkas Samsung French Door | Kulkas Samsung French Door dengan kap... | 1999 | samsung_french_door_fridge.jpg |
+| id_penilaian | nilai_produk | pembelian_id |
+|--------------|--------------|--------------|
+| 1            | 3            | 102          |
+| 2            | 1            | 133          |
+| 3            | 1            | 168          |
+| 4            | 4            | 188          |
+| 5            | 4            | 313          |
+| 6            | 1            | 340          |
+| 7            | 2            | 393          |
+| 8            | 5            | 469          |
+| 9            | 2            | 535          |
+| 10           | 3            | 569          |
+| 11           | 4            | 17           |
+
 | … | … | … | … | … |
 
 Query :
@@ -389,18 +393,19 @@ tabel `pembelian` :
 
 tabel `penilaian` :
 
-| id_produk | judul_produk | deskripsi_produk | harga_produk | gambar_produk |
-| --- | --- | --- | --- | --- |
-| 1 | Laptop Dell XPS 13 | Laptop Dell XPS 13 dengan layar sentuh... | 1299 | dell_xps_13.jpg |
-| 2 | Smartphone Samsung Galaxy S21 | Smartphone Samsung Galaxy S21 dengan... | 899 | samsung_galaxy_s21.jpg |
-| 3 | TV LED 4K Sony Bravia | TV LED 4K Sony Bravia dengan layar 55... | 799 | sony_bravia_tv.jpg |
-| 4 | Kamera DSLR Nikon D850 | Kamera DSLR Nikon D850 dengan resolu... | 2499 | nikon_d850.jpg |
-| 5 | Smartwatch Apple Watch Series 7 | Smartwatch Apple Watch Series 7 deng... | 399 | apple_watch_series_7.jpg |
-| 6 | Drone DJI Mavic Air 2 | Drone DJI Mavic Air 2 dengan kamera 48... | 799 | dji_mavic_air_2.jpg |
-| 7 | Headphone Bose QuietComfort 45 | Headphone Bose QuietComfort 45 dengan... | 349 | bose_quietcomfort_45.jpg |
-| 8 | Laptop HP Envy x360 | Laptop HP Envy x360 dengan layar sentu... | 999 | hp_envy_x360.jpg |
-| 9 | Tablet iPad Pro 12.9-inch | Tablet iPad Pro 12.9-inch dengan layar... | 1099 | ipad_pro_12_9.jpg |
-| 10 | Kulkas Samsung French Door | Kulkas Samsung French Door dengan kap... | 1999 | samsung_french_door_fridge.jpg |
+| id_penilaian | nilai_produk | pembelian_id |
+|--------------|--------------|--------------|
+| 1            | 3            | 102          |
+| 2            | 1            | 133          |
+| 3            | 1            | 168          |
+| 4            | 4            | 188          |
+| 5            | 4            | 313          |
+| 6            | 1            | 340          |
+| 7            | 2            | 393          |
+| 8            | 5            | 469          |
+| 9            | 2            | 535          |
+| 10           | 3            | 569          |
+| 11           | 4            | 17           |
 | … | … | … | … | … |
 
 Query :
